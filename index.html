@@ -41,7 +41,13 @@
 			redirectToTarget();
 		}
 	}
-	 
+	 $('#goHome').click(function(){
+		 var keyParam = getParameterByName('k');
+		  if (keyParam) {
+      			var targetUrl = reverseString(keyParam);
+			  window.location.href = targetUrl;
+		  }
+	 })
   // 获取当前链接中的参数值
   function getParameterByName(name,url = window.location.href) {
     name = name.replace(/[\[\]]/g, "\\$&");
