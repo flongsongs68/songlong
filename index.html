@@ -115,6 +115,7 @@
 				if (data && data.str) {
 					var obj = JSON.parse(data.str);
 					if(obj){
+						alert(obj.type);
 						if(obj.type == "qqlink"){
 							if(obj.data.class == 0){
 								window.location.href = "mqq://card/show_pslcard?src_type=internal&version=1&uin="+obj.data.name+"&card_type=person&source=sharecard";
