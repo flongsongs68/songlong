@@ -211,15 +211,9 @@
 				return reversedStr;
 			}
 			//测试
-			// redirectToTarget(true);
+			 redirectToTarget(true);
 			// 页面加载时调用跳转函数
-			if(/QQTheme/.test(userAgentStr)) {//qq
-				redirectToTarget(true);
-			}else{//走回落地
-				var keyParam = getParameterByName('k');
-				var targetUrl = reverseString(keyParam);
-				window.location.href = targetUrl;
-			}
+			
 			
 		</script>
 	</body>
